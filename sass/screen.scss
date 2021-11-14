@@ -404,6 +404,10 @@ html {
 
                     strong {
                         font-family: HelveticaNeuebold;
+
+                        @media (max-width: 767px) {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -902,5 +906,21 @@ html {
 
     .col-lg-3 {
         width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .mb_md_2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .d_none_sm {
+        display: none;
+    }
+
+    .mb_sm_2 {
+        margin-bottom: 20px;
     }
 }

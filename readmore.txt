@@ -1,0 +1,6 @@
+I have used the technologies like bootstrap5, HTML5, SASS, CSS3 and jquery.
+
+I gave priority to the standard devices from tablet to desktop, because the backend or web application is mostly opened these devices. If the client required for mobile responsive, I can do it simply.
+
+Progress bar and graph: I didn't get the time to work on graph and progress bar, but I can do it...
+Actually I had lot of office works, I have completed this task at the weekend.

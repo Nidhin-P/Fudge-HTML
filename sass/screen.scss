@@ -27,7 +27,7 @@ $howManySteps: 100; //this needs to be even.
     font-family: HelveticaNeuelight;
     color: #000;
     text-decoration: none;
-  }
+}
 
 // fonts
 @font-face {
@@ -98,6 +98,10 @@ $howManySteps: 100; //this needs to be even.
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+.flex_0 {
+    flex: 0 !important;
 }
 
 // common assets
@@ -531,7 +535,7 @@ html {
             }
 
             a.view {
-              @include view;
+                @include view;
             }
 
             .indicators {
@@ -653,10 +657,11 @@ html {
                             -o-border-radius: 100%;
                             object-fit: cover;
                         }
+
                         &.big_icon {
                             img {
                                 width: 65px;
-                                height: 66px;  
+                                height: 66px;
                             }
                         }
 
@@ -667,9 +672,11 @@ html {
                             top: 27px;
                             right: 0;
                             border-radius: 100%;
+
                             &.online {
                                 background-color: #7FCC6D;
                             }
+
                             &.offline {
                                 background-color: #A7A7A7;
                             }
@@ -698,6 +705,7 @@ html {
                             padding-top: 8px;
                             line-height: 17px;
                         }
+
                         span {
                             height: 8px;
                             width: 8px;
@@ -705,9 +713,11 @@ html {
                             right: 0;
                             border-radius: 100%;
                             display: inline-block;
+
                             &.online {
                                 background-color: #7FCC6D;
                             }
+
                             &.offline {
                                 background-color: #A7A7A7;
                             }
@@ -872,5 +882,25 @@ html {
             -webkit-transform: rotate($degrees);
             transform: rotate(#{$degrees}deg);
         }
+    }
+}
+
+// media screens
+
+@media (min-width: 992px) and (max-width: 1400px) {
+    .col-lg-7 {
+        width: 100%;
+    }
+
+    .col-lg-5 {
+        width: 100%;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .col-lg-3 {
+        width: 50%;
     }
 }

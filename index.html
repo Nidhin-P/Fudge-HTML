@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link  rel="icon" href="images/fav.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- compiled css -->
+  <link href="stylesheets/screen.css" rel="stylesheet">
+  <!-- animation -->
+  <link href="css/animations.css" rel="stylesheet">
+  <title>Fudge</title>
+</head>
+
+<body>
+  <div class="whole_container">
+    <!-- sidebar -->
+    <div class="side_menu">
+      <span class="close_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-x-lg"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+          <path fill-rule="evenodd"
+            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+        </svg>
+      </span>
+      <div class="logo_sec">
+        <a href="" class="nav-brand">
+          <img src="images/logo.png">
+        </a>
+      </div>
+      <nav class="sidebar">
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href=""><span class="sprite dbrd"></span> <span class="menu_txt">Dashboard</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="sprite advsr"></span> <span class="menu_txt">Advisors</span></a>
+          </li>
+          <li>
+            <a href=""><span class="sprite mydoc"></span> <span class="menu_txt">My Documents</span></a>
+          </li>
+          <li>
+            <a href=""><span class="sprite newsfd"></span> <span class="menu_txt">News Feed</span></a>
+          </li>
+          <li>
+            <a href=""><span class="sprite sprt"></span> <span class="menu_txt">Support</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main content -->
+    <div class="content_wrapper">
+      <div class="header_wrapper">
+        <span class="toggle_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </span>
+        <div class="left_sec w-50">
+          <span class="prof"><img src="images/prof.png"></span>
+          <span class="txt">Welcome, <strong>Alex Martin</strong>. Here’s your personalized financial dashboard</span>
+        </div>
+        <div class="right_sec w-50">
+          <span>Currency:</span>
+          <div class="dropdown">
+            <a class=" dropdown-toggle" href="#" role="button" id="currency" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              GBP
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="currency">
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">INR</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ms-5">
+            <a class="dropdown-toggle" type="button" id="account" data-bs-toggle="dropdown" aria-expanded="false">
+              My Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="account">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content_body">
+        <h1><span>Dashboard Home</span></h1>
+
+        <div class="row mt-5">
+          <div class="col-lg-7">
+            <h4>Quick Stats</h4>
+          </div>
+          <div class="col-lg-5 d-flex">
+            <h4 class="w-50">My Financial Health</h4>
+            <div class="w-50 text-end">
+              <a href="" class="view">View Financial Health</a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="content_box">
+              <h3>£563,350</h3>
+              <p>Your net worth as of today</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="content_box">
+              <h3>£563,350</h3>
+              <p>Monthy Cashflow</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="content_box">
+              <h3>£563,350</h3>
+              <p>Overall Liabilities</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="content_box">
+              <img src="images/progress.svg" class="w-100">
+              <h6>Your financial health status is <strong>GOOD</strong>. However there’s still room for improvement. <a
+                  href="">See how you can improve</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <img src="images/graph.png" class="w-100">
+            <div class="indicators mt-3">
+              <span>Expenses</span>
+              <span>Net worth</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12  d-flex">
+                <h4 class="w-50">My Goals</h4>
+                <div class="w-50 text-end">
+                  <a href="" class="view">View All Goals</a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content_box text-center prgrs_bx">
+                  <h4>Retirement</h4>
+                  <div class="progress" data-percentage="65">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">
+                      <div>
+                        65%<br>
+                        <span>On Track</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="ftr">
+                    <li>£ 563,350</li>
+                    <li>£ 2,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content_box text-center prgrs_bx">
+                  <h4>Vacation Home</h4>
+                  <div class="progress" data-percentage="78">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">
+                      <div>
+                        78%<br>
+                        <span>On Track</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="ftr">
+                    <li>£ 563,350</li>
+                    <li>£ 2,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content_box text-center prgrs_bx">
+                  <h4>Vacation Home</h4>
+                  <div class="progress" data-percentage="56">
+                    <span class="progress-left">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">
+                      <div>
+                        56%<br>
+                        <span>On Track</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="ftr">
+                    <li>£ 563,350</li>
+                    <li>£ 2,000,000</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <div class="border_bx">
+              <h4>Industry News</h4>
+              <ul class="news_wrp">
+                <li class="news_item">
+                  <h6>21 May 2021</h6>
+                  <h4 class="mb-3">The standard Lorem Ipsum passage, used since the 1500s</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                  <a href="">Read full article</a>
+                </li>
+                <li class="news_item">
+                  <h6>21 May 2021</h6>
+                  <h4 class="mb-3">The standard Lorem Ipsum passage, used since the 1500s</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                  <a href="">Read full article</a>
+                </li>
+              </ul>
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a> </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0044B1"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="border_bx">
+              <h4>Top Comments</h4>
+              <ul class="list_wrp">
+                <li>
+                  <span class="icon">
+                    <img src="images/user1.png">
+                    <span class="online"></span>
+                  </span>
+                  <div class="content">
+                    <h5>Jack Sparrows</h5>
+                    <h6>Online</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="icon">
+                    <img src="images/user1.png">
+                    <span class="online"></span>
+                  </span>
+                  <div class="content">
+                    <h5>Queen Latifah</h5>
+                    <h6>Online</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="icon">
+                    <img src="images/user1.png">
+                    <span class="offline"></span>
+                  </span>
+                  <div class="content">
+                    <h5>Elon Musk</h5>
+                    <h6>2 hours ago</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="icon">
+                    <img src="images/user1.png">
+                    <span class="offline"></span>
+                  </span>
+                  <div class="content">
+                    <h5>Warren Buffet</h5>
+                    <h6>7 hours ago</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="border_bx">
+              <h4>Users</h4>
+              <ul class="list_wrp">
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user2.png">
+                  </span>
+                  <div class="content">
+                    <h5>Don Corleone</h5>
+                    <h6> <span class="online"></span> Online</h6>
+                  </div>
+                </li>
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user3.png">
+                  </span>
+                  <div class="content">
+                    <h5>Joker</h5>
+                    <h6><span class="online"></span> Online</h6>
+                  </div>
+                </li>
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user4.png">
+                  </span>
+                  <div class="content">
+                    <h5>Hans Landa</h5>
+                    <h6><span class="offline"></span> Offline</h6>
+                  </div>
+                </li>
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user5.png">
+                  </span>
+                  <div class="content">
+                    <h5>Jules Winnfield</h5>
+                    <h6><span class="offline"></span> Offline</h6>
+                  </div>
+                </li>
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user6.png">
+                  </span>
+                  <div class="content">
+                    <h5>Sarah Connor</h5>
+                    <h6><span class="offline"></span> Offline</h6>
+                  </div>
+                </li>
+                <li class="align-items-center">
+                  <span class="icon big_icon">
+                    <img src="images/user6.png">
+                  </span>
+                  <div class="content">
+                    <h5>Sarah Connor</h5>
+                    <h6><span class="offline"></span> Offline</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- custom -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
